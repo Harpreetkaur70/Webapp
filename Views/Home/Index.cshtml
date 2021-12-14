@@ -1,0 +1,39 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<style>
+    body{
+        text-align:center;
+        background-color:lightgrey;
+        font-size: 30px;
+        color:black;
+    }
+    input[type=submit] {
+        font-size:30px;
+    }
+</style>
+<body>
+    <h1>Web App</h1>
+<form  method="post" asp-controller="Home" asp-action="index">
+  <label for="date">Date</label><br>
+  <input type="date" id="date" name="date" ><br>
+  <label for="days">No. of Days</label><br>
+  <input type="number" id="days" name="days" ><br><br>
+  <input type="submit" value="Submit">
+
+
+</form>
+<hr />
+ @ViewBag.Dat
+ 
+</body>
+</html>
